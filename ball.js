@@ -14,7 +14,7 @@ class Ball {
     }
     display(){
       var pos =this.body.position;
-     imageMode(RADIUS)
+     imageMode(CENTER)
      
       image(this.image,pos.x, pos.y, this.radius);
     }
