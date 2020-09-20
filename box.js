@@ -13,8 +13,8 @@ class Box {
     }
     display(){
       var pos =this.body.position;
-      imageMode(CENTER);
+      imageMode(CORNER); 
+      image(this.image,535, 420, 230, 230);
       
-      image(this.image,pos.x, pos.y, this.width, this.height);
     }
   };

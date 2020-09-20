@@ -11,9 +11,11 @@ function setup() {
   createCanvas(800, 700);
   engine = Engine.create()
   world = engine.world
-  box2 = new Box(550,540,10,200)
-  box3 = new Box(750,540,10,200)
-  box1 = new Box(650,530,230,230)
+  box2 = Bodies.rectangle(535,640,10,250,{isStatic:true, friction:2})
+  World.add(world, box2);
+  box3 = Bodies.rectangle(765,640,10,220,{isStatic:true, friction:2})
+  World.add(world, box3);
+  box1 = new Box(650,640,230,10)
   
 
 	
